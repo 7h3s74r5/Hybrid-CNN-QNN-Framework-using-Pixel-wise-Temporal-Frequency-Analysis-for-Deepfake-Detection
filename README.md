@@ -1,0 +1,1 @@
+# Hybrid-CNN-QNN-Framework-using-Pixel-wise-Temporal-Frequency-Analysis-for-Deepfake-Detection
