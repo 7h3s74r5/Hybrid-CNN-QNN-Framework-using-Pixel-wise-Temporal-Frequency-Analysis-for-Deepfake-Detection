@@ -17,9 +17,16 @@ celebdf: https://www.kaggle.com/datasets/reubensuju/celeb-df-v2
 <img src="architecture.png" width="800" >
 </p>
 
-## Requirements
+## Setup
 
-NOTE: Install the requirements in the predefined order to avoid version conflicts
+Install the requirements in the predefined order to avoid version conflicts.
+
+If you're using google colab, mount the drive using the following code- 
+
+'''python
+from google.colab import drive
+drive.mount('/content/drive')
+'''
 
 ## Pipeline
 <ol background-color="#8F7D77">
