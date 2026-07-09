@@ -74,9 +74,6 @@ Training-
    </ol>
    </li>
    <li>
-Evaluation
-   </li>
-   <li>
 Inference-
     <ol type="a">
   <li>predict_pwtf_clip.py</li>
