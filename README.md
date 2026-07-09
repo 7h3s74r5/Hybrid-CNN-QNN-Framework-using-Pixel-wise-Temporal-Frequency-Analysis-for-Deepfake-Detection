@@ -23,12 +23,14 @@ celebdf: https://www.kaggle.com/datasets/reubensuju/celeb-df-v2
 
 <li>If you're using google colab, mount the drive using the following code- 
 
+
 ```python
 from google.colab import drive
 drive.mount('/content/drive', force_remount=True)
 ```
 </li>
 </ul>
+
 ## Pipeline
 <ol background-color="#8F7D77">
 <li>
