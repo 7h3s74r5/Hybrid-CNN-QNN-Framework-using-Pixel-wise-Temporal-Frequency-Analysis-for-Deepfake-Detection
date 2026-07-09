@@ -14,3 +14,7 @@ dataset/
     └── video2.mp4
 ```
 
+## Sample
+<p align="center">
+<img src="sample.png">
+</p>
