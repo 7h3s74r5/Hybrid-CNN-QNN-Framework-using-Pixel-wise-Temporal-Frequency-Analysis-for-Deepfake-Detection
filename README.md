@@ -32,6 +32,8 @@ drive.mount('/content/drive', force_remount=True)
 </ul>
 
 ## Pipeline
+
+
 <ol background-color="#8F7D77">
 <li>
  Preprocess-
@@ -84,5 +86,6 @@ Inference-
    </ol>
    </li>
 </ol>
+
 
 ## Results
