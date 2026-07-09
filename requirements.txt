@@ -1,0 +1,18 @@
+numpy==1.26.4 -q
+
+torch==2.2.2 torchvision==0.17.2 torchaudio==2.2.2 -q
+
+autoray==0.6.11
+
+jax==0.4.26 jaxlib==0.4.26
+
+pennylane==0.37.0 -q
+
+
+opencv-python==4.10.0.84 -q
+
+facenet-pytorch==2.6.0 -q
+
+scikit-learn==1.5.1 -q
+
+matplotlib==3.9.0 tqdm -q
