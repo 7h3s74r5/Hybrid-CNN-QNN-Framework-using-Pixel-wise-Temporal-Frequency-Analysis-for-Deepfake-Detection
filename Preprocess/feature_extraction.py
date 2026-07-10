@@ -1,55 +1,61 @@
 from scipy.fft import fft
 
+
 def generate_pwtf(frames):
-
-    """
-    frames shape
-
-    (32,128,128)
-
-    """
 
     fft_volume = fft(
         frames,
         axis=0
     )
 
-    magnitude = np.abs(
-        fft_volume
+
+    magnitude = np.log1p(
+        np.abs(fft_volume)
     )
 
     phase = np.angle(
         fft_volume
     )
 
+
+    
+    magnitude = magnitude[1:9]
+
+    phase = phase[1:9]
+
+
+    # Aggregate low-frequency temporal bands
+
     magnitude = magnitude.mean(
         axis=0
     )
 
-    phase = phase.std(
+    phase = phase.mean(
         axis=0
     )
 
+
+    # Normalize
+
     magnitude = (
-        magnitude -
-        magnitude.min()
+        magnitude - magnitude.min()
     ) / (
         magnitude.max()
-        -
-        magnitude.min()
-        + 1e-4
-    )
-
-    phase = (
-        phase -
-        phase.min()
-    ) / (
-        phase.max()
-        -
-        phase.min()
+        - magnitude.min()
         + 1e-8
     )
 
+
+    phase = (
+        phase + np.pi
+    ) / (
+        2*np.pi
+    )
+
+
     return np.stack(
-        [magnitude, phase]
+        [
+            magnitude,
+            phase
+        ]
     ).astype(np.float32)
