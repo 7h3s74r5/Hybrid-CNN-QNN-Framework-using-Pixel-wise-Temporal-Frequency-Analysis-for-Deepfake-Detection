@@ -29,7 +29,7 @@ print("Using Device :", device)
 # Hyperparameters
 # =====================================================
 
-EPOCHS = 30
+EPOCHS = 50
 
 BATCH_SIZE = 32
 
